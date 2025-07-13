@@ -1,0 +1,99 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Fondo */
+body {
+  background: linear-gradient(135deg, #f0f4ff, #dbeafe);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+/* Contenedor */
+.container {
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Formularios */
+.form-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 12px;
+  border: 2px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+.hidden {
+  display: none;
+}
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin-top: 20px;
+  text-align: left;
+}
+
+li {
+  background-color: #f9fafb;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Estilo para el formulario de tareas */
+#form-tarea {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 10px 0; /* separa de arriba y abajo */
+}
+
+#app-tareas h2 {
+  margin-bottom: 10px;
+}
