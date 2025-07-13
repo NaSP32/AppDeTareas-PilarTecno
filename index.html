@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login + Tareas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- FORMULARIO DE LOGIN -->
+      <div id="login-form" class="form-box">
+        <h2>🔐 Iniciar sesión</h2>
+        <input type="text" id="login-user" placeholder="Ingresa tu usuario" />
+        <input type="password" id="login-pass" placeholder="Contraseña" />
+        <button onclick="login()">Ingresar</button>
+        <p>
+          ¿No tenés cuenta?
+          <a href="#" onclick="mostrarRegister()">Registrate acá</a>
+        </p>
+      </div>
+
+      <!-- FORMULARIO DE REGISTRO -->
+      <div id="register-form" class="form-box hidden">
+        <h2>📝 Crear cuenta</h2>
+        <input type="text" id="register-user" placeholder="Elegí un usuario" />
+        <input
+          type="password"
+          id="register-pass"
+          placeholder="Creá una contraseña"
+        />
+        <button onclick="registrar()">Registrarse</button>
+        <p>
+          ¿Ya tenés cuenta?
+          <a href="#" onclick="mostrarLogin()">Iniciar sesión</a>
+        </p>
+      </div>
+
+      <!-- APP PRINCIPAL -->
+      <div id="app-tareas" class="hidden">
+        <h2>👋 ¡Hola <span id="usuario-logueado"></span>!</h2>
+        <form id="form-tarea">
+          <input type="text" id="input-tarea" placeholder="Escribí una tarea" />
+          <button type="submit">Agregar tarea</button>
+        </form>
+        <ul id="lista-tareas"></ul>
+        <button onclick="cerrarSesion()">Cerrar sesión</button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
